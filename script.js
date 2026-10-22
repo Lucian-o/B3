@@ -26,3 +26,9 @@ console.log("First character:", myString.charAt(0));
 
 // Displays the eleventh character.
 console.log("Eleventh character:", myString.charAt(10));
+
+    // B3.4: Extracts characters from index 5 up to, but excluding, index 9.
+console.log("Sliced string:", myString.slice(5, 9));
+
+// Extracts "the", accounting for anotherString's three leading spaces.
+console.log("Substring:", anotherString.substring(6, 9));
