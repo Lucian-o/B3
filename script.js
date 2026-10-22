@@ -17,3 +17,12 @@ console.log("myString:", myString);
 console.log("anotherString:", JSON.stringify(anotherString));
 console.log("hello:", hello);
 console.log("myName:", myName);
+
+    // B3.3: Displays the number of characters, including spaces.
+console.log("String length:", myString.length);
+
+// Displays the first character.
+console.log("First character:", myString.charAt(0));
+
+// Displays the eleventh character.
+console.log("Eleventh character:", myString.charAt(10));
