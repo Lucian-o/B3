@@ -68,3 +68,9 @@ fs.writeFileSync(filePath, fileContents, "utf8");
 
 // Confirms that the write operation completed.
 console.log("File written:", filePath);
+
+    // B3.9: Reads the file's contents as a UTF-8 string.
+const savedContents = fs.readFileSync(filePath, "utf8");
+
+// Displays the text read from the file.
+console.log("Text read from output.txt:", savedContents);
