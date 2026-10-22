@@ -50,3 +50,27 @@ console.log("Replaced string:", JSON.stringify(myString.replace("is a", " ")));
 
 // Splits myString into an array using spaces as separators.
 console.log("Split string:", myString.split(" "));
+
+    // B3.8: Loads Node.js functions for reading and writing files.
+const fs = require("node:fs");
+
+// Loads Node.js functions for constructing file paths.
+const path = require("node:path");
+
+// Locates output.txt in the same folder as this script.
+const filePath = path.join(__dirname, "output.txt");
+
+// Stores the text that will be written to the file.
+const fileContents = "My name is Luciano. This is my B3 file handling example.";
+
+// Writes the string to output.txt using UTF-8 encoding.
+fs.writeFileSync(filePath, fileContents, "utf8");
+
+// Confirms that the write operation completed.
+console.log("File written:", filePath);
+
+    // B3.9: Reads the file's contents as a UTF-8 string.
+const savedContents = fs.readFileSync(filePath, "utf8");
+
+// Displays the text read from the file.
+console.log("Text read from output.txt:", savedContents);
