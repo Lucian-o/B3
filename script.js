@@ -32,3 +32,9 @@ console.log("Sliced string:", myString.slice(5, 9));
 
 // Extracts "the", accounting for anotherString's three leading spaces.
 console.log("Substring:", anotherString.substring(6, 9));
+
+    // B3.5: Displays my name in uppercase.
+console.log("Uppercase name:", myName.toUpperCase());
+
+// Displays my name in lowercase.
+console.log("Lowercase name:", myName.toLowerCase());
